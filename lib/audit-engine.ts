@@ -23,11 +23,8 @@ function generateRecommendation(
 ): Recommendation {
   const { tool, plan, monthlySpend, seats } = toolSpend;
   
-  // Check if tool is appropriate for use case
   const toolFitsUseCase = TOOL_USE_CASE_FIT[useCase]?.includes(tool);
-  
-  // Calculate expected spend based on pricing data
-  const pricingData = PRICING[tool]?.[plan as keyof typeof PRICING[typeof tool]];
+  const pricingData = PRICING[tool]?.[plan as keyof typeof PRICING[typeof tool]] as any;
   
   if (!pricingData) {
     return {
@@ -38,16 +35,14 @@ function generateRecommendation(
     };
   }
 
-  // Check for seat optimization
   if (pricingData.perSeat) {
     const expectedSpend = pricingData.monthly * seats;
     const minSeats = 'minSeats' in pricingData ? pricingData.minSeats : 1;
     
-    // Check if paying for minimum seats but not using them
     if (seats === minSeats && teamSize < minSeats) {
       const downgradePlan = findDowngradePlan(tool, plan);
       if (downgradePlan) {
-        const newPricing = PRICING[tool][downgradePlan as keyof typeof PRICING[typeof tool]];
+        const newPricing = PRICING[tool][downgradePlan as keyof typeof PRICING[typeof tool]] as any;
         const newSpend = newPricing.monthly * teamSize;
         const savings = monthlySpend - newSpend;
         
@@ -63,7 +58,6 @@ function generateRecommendation(
       }
     }
     
-    // Check if overpaying vs expected
     if (monthlySpend > expectedSpend * 1.1) {
       const potentialSavings = monthlySpend - expectedSpend;
       return {
@@ -76,7 +70,6 @@ function generateRecommendation(
     }
   }
   
-  // Check for use case mismatch
   if (!toolFitsUseCase) {
     const betterAlternative = findBetterAlternative(tool, useCase, monthlySpend);
     if (betterAlternative) {
@@ -84,7 +77,6 @@ function generateRecommendation(
     }
   }
   
-  // Check for Credex savings opportunity
   if (monthlySpend >= 100) {
     const credexSavings = monthlySpend * CREDEX_DISCOUNT_RATE;
     return {
@@ -95,10 +87,9 @@ function generateRecommendation(
     };
   }
   
-  // Check for free tier opportunity
-  if (plan !== 'free' && plan !== 'hobby' && seats <= 2 && monthlySpend < 50) {
+  if (plan !== 'free' && plan !== 'hobby' && seats <= 2 && monthlySpend < 50 && monthlySpend > 15) {
     const freeTierTool = findFreeTierAlternative(tool, useCase);
-    if (freeTierTool) {
+    if (freeTierTool && freeTierTool !== tool) {
       return {
         action: 'switch',
         reason: `For light usage, ${freeTierTool} free tier may be sufficient. Test before canceling.`,
@@ -110,7 +101,6 @@ function generateRecommendation(
     }
   }
   
-  // No optimization found
   return {
     action: 'keep',
     reason: `Your ${plan} plan is appropriately sized for ${seats} seat(s) and ${useCase} use case.`,
@@ -137,7 +127,6 @@ function findBetterAlternative(
 ): Recommendation | null {
   const suitableTools = TOOL_USE_CASE_FIT[useCase];
   
-  // For coding use case, suggest cheaper coding-specific tools
   if (useCase === 'coding') {
     if (currentTool === 'claude' || currentTool === 'chatgpt') {
       return {
@@ -151,7 +140,6 @@ function findBetterAlternative(
     }
   }
   
-  // For writing/research, suggest Claude or ChatGPT
   if ((useCase === 'writing' || useCase === 'research') && currentTool === 'cursor') {
     return {
       action: 'switch',
@@ -169,13 +157,12 @@ function findBetterAlternative(
 function findFreeTierAlternative(currentTool: AITool, useCase: UseCase): string | null {
   const suitableTools = TOOL_USE_CASE_FIT[useCase];
   
-  // Suggest free alternatives based on use case
   if (useCase === 'coding') {
-    return 'windsurf'; // Has generous free tier
+    return 'windsurf';
   }
   
   if (useCase === 'writing' || useCase === 'research') {
-    return 'claude'; // Free tier available
+    return 'claude';
   }
   
   return null;
