@@ -5,11 +5,26 @@
 @layer base {
   input[type="number"] {
     color-scheme: dark;
+    caret-color: white;
+    font-weight: 500;
   }
   
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     opacity: 1;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    caret-color: white;
+  }
+  
+  select {
+    caret-color: white;
+  }
+  
+  input::placeholder {
+    opacity: 0.6;
   }
 }
 

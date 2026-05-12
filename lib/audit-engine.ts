@@ -39,33 +39,61 @@ function generateRecommendation(
     const expectedSpend = pricingData.monthly * seats;
     const minSeats = 'minSeats' in pricingData ? pricingData.minSeats : 1;
     
-    if (seats === minSeats && teamSize < minSeats) {
-      const downgradePlan = findDowngradePlan(tool, plan);
-      if (downgradePlan) {
-        const newPricing = PRICING[tool][downgradePlan as keyof typeof PRICING[typeof tool]] as any;
-        const newSpend = newPricing.monthly * teamSize;
-        const savings = monthlySpend - newSpend;
-        
-        if (savings > 0) {
-          return {
-            action: 'downgrade',
-            reason: `Team of ${teamSize} doesn't need ${minSeats}-seat minimum. Downgrade to ${downgradePlan} plan.`,
-            newPlan: downgradePlan,
-            monthlySavings: savings,
-            annualSavings: savings * 12,
-          };
-        }
-      }
+    // Check if team is larger than seats (underutilization or need more seats)
+    if (teamSize > seats && seats > 0) {
+      const unusedTeamMembers = teamSize - seats;
+      return {
+        action: 'keep',
+        reason: `You have ${unusedTeamMembers} team member(s) without access. Consider adding seats if they need ${tool}, or you're optimized if only ${seats} people use it.`,
+        monthlySavings: 0,
+        annualSavings: 0,
+      };
     }
     
-    if (monthlySpend > expectedSpend * 1.1) {
-      const potentialSavings = monthlySpend - expectedSpend;
+    // Check if paying for more seats than team size
+    if (seats > teamSize && teamSize > 0) {
+      const excessSeats = seats - teamSize;
+      const savingsPerSeat = pricingData.monthly;
+      const potentialSavings = excessSeats * savingsPerSeat;
+      
       return {
         action: 'downgrade',
-        reason: `Paying $${monthlySpend}/mo for ${seats} seats, but ${plan} plan should cost $${expectedSpend}/mo. Review your billing.`,
+        reason: `You're paying for ${seats} seats but only have ${teamSize} team members. Reduce to ${teamSize} seats to save money.`,
         newPlan: plan,
         monthlySavings: potentialSavings,
         annualSavings: potentialSavings * 12,
+      };
+    }
+    
+    // Check if paying significantly more than expected
+    if (monthlySpend > expectedSpend * 1.15) {
+      const potentialSavings = monthlySpend - expectedSpend;
+      return {
+        action: 'review',
+        reason: `Paying $${monthlySpend.toFixed(0)}/mo for ${seats} seats, but ${plan} plan should cost $${expectedSpend.toFixed(0)}/mo. Review your billing.`,
+        newPlan: plan,
+        monthlySavings: potentialSavings,
+        annualSavings: potentialSavings * 12,
+      };
+    }
+    
+    // Check if paying significantly less (might be on discount or old pricing)
+    if (monthlySpend < expectedSpend * 0.85 && monthlySpend > 0) {
+      // They have a good deal, acknowledge it
+      if (monthlySpend >= 100) {
+        const credexSavings = monthlySpend * CREDEX_DISCOUNT_RATE;
+        return {
+          action: 'keep',
+          reason: `You have a good rate on ${plan} plan. Credex can offer additional ~15% discount ($${credexSavings.toFixed(0)}/mo).`,
+          monthlySavings: credexSavings,
+          annualSavings: credexSavings * 12,
+        };
+      }
+      return {
+        action: 'keep',
+        reason: `You have a favorable rate on ${plan} plan for ${seats} seats. Keep this pricing!`,
+        monthlySavings: 0,
+        annualSavings: 0,
       };
     }
   }

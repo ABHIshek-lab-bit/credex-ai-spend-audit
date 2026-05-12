@@ -16,6 +16,8 @@ node_modules/
 # Misc
 .DS_Store
 *.pem
+.vscode/
+.idea/
 
 # Debug
 npm-debug.log*
