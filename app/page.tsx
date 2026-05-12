@@ -224,9 +224,9 @@ export default function Home() {
                         </label>
                         <input
                           type="number"
-                          value={tool.monthlySpend}
+                          value={tool.monthlySpend || ''}
                           onChange={(e) => updateTool(index, { monthlySpend: parseFloat(e.target.value) || 0 })}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm [color-scheme:dark]"
                           min="0"
                           step="0.01"
                           required
@@ -240,9 +240,9 @@ export default function Home() {
                         </label>
                         <input
                           type="number"
-                          value={tool.seats}
+                          value={tool.seats || ''}
                           onChange={(e) => updateTool(index, { seats: parseInt(e.target.value) || 1 })}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm [color-scheme:dark]"
                           min="1"
                           required
                           placeholder="1"
@@ -271,9 +271,9 @@ export default function Home() {
                   </label>
                   <input
                     type="number"
-                    value={formData.teamSize}
+                    value={formData.teamSize || ''}
                     onChange={(e) => setFormData({ ...formData, teamSize: parseInt(e.target.value) || 1 })}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 backdrop-blur-sm [color-scheme:dark]"
                     min="1"
                     required
                     placeholder="1"
