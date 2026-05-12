@@ -48,4 +48,6 @@ Users tab away to check their Cursor billing page mid-form. Without persistence,
 
 ## Deployed URL
 
-[Will add after Vercel deployment]
+**Live Application:** https://credex-ai-spend-audit-azure.vercel.app
+
+Try it now - no login required, takes 5 minutes to complete an audit.

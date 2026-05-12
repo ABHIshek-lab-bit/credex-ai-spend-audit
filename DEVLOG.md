@@ -235,3 +235,40 @@
 - Run Lighthouse audit
 - Add screenshots to README
 - Submit to Credex
+
+
+---
+
+## Day 7 — 2026-05-12
+
+**Hours worked:** 5
+
+**What I did:**
+- Final UI polish: improved input field visibility, added white caret color
+- Fixed audit engine logic to handle edge cases (team size vs seats mismatch)
+- Improved number input UX - users can now clear fields with backspace
+- Added modern dark theme with glassmorphism effects and 3D animations
+- Cleaned up project: removed IDE-specific files, updated .gitignore
+- Added MIT License to the project
+- Fixed ESLint configuration for CI compatibility
+- Fixed TypeScript type error (added 'review' action type)
+- Pushed final code to GitHub: https://github.com/ABHIshek-lab-bit/credex-ai-spend-audit
+- Deployed to Vercel: https://credex-ai-spend-audit-azure.vercel.app
+- Verified CI/CD pipeline passes with green checks
+- Updated all documentation with live URLs
+
+**What I learned:**
+- GitHub Actions requires specific token permissions for workflow files
+- Vercel deployment is incredibly smooth with Next.js - took 2 minutes
+- The importance of testing the full user flow on production before submitting
+- Small UX details (cursor visibility, input clearing) matter a lot for user experience
+- CI/CD is not just a checkbox - it actually caught real TypeScript errors
+
+**Blockers / what I'm stuck on:**
+- None - project is complete and ready for submission
+
+**Plan for tomorrow:**
+- Submit the assignment via Google Form
+- Take screenshots/screen recording for README
+- Run final Lighthouse audit on deployed URL
+- Double-check all required files are in the repo
