@@ -31,7 +31,7 @@ export interface AuditInput {
 }
 
 export interface Recommendation {
-  action: 'keep' | 'downgrade' | 'switch' | 'upgrade';
+  action: 'keep' | 'downgrade' | 'switch' | 'upgrade' | 'review';
   reason: string;
   newTool?: AITool;
   newPlan?: string;
