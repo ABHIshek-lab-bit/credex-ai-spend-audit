@@ -1,138 +1,112 @@
 # User Interviews
 
-## Interview 1: Sarah K. — Engineering Manager, Series A SaaS Startup
+## Interview 1: Rohan Gupta — Software Developer, Small Startup
 
-**Role:** Engineering Manager  
-**Company Stage:** Series A (25 employees, 8 engineers)  
+**Role:** Full Stack Developer  
+**Company:** Small startup (8 people total, 3 developers)  
 **Date:** May 7, 2026  
-**Duration:** 12 minutes (Zoom call)
+**Duration:** 10 minutes (WhatsApp call)
 
-**Me:** Thanks for taking the time. So you mentioned your team uses a bunch of AI tools?
+**Me:** Hey Rohan, you said you're using AI tools for coding?
 
-**Sarah:** Yeah, we've got Cursor Business for everyone. All 8 engineers. Plus some people have their own ChatGPT subscriptions, I think.
+**Rohan:** Yeah bro, I use ChatGPT Plus and Cursor. My company pays for Cursor, but I pay for ChatGPT myself.
 
-**Me:** Got it. How's that working out?
+**Me:** Why do you pay for ChatGPT if company gives you Cursor?
 
-**Sarah:** Honestly? Only like 3 of them actually use Cursor every day. The rest are still on VS Code with Copilot. Old habits, you know?
+**Rohan:** Because Cursor is only for coding na. ChatGPT I use for other things - writing emails, documentation, explaining concepts. Plus sometimes Cursor is slow, so I just use ChatGPT.
 
-**Me:** So you're paying for 8 seats but only 3 are really using it?
+**Me:** How much are you spending?
 
-**Sarah:** Pretty much. I mean, I don't track it that closely. I just approve the invoices when they come in.
+**Rohan:** ChatGPT is $20 per month, so around 1600-1700 rupees. Cursor company pays, I think it's $20 also.
 
-**Me:** Do you know what you're spending total on AI tools per month?
+**Me:** Do you think you need both?
 
-**Sarah:** *laughs* No idea. Maybe $500? Could be more. Our CFO actually asked me about this last month—wanted to know if we could cut AI costs. I had nothing to tell him.
+**Rohan:** *pauses* I don't know yaar. Maybe not? But I'm scared to cancel ChatGPT because what if I need it and Cursor doesn't work? I've never really thought about it properly.
 
-**Me:** What would help you answer that question?
+**Me:** If someone told you exactly which one to keep and which to cancel, would you do it?
 
-**Sarah:** I need something that just shows me: here's what we pay, here's what we should pay. The hardest part isn't even the money—it's justifying it to finance. Like, are we being smart about this or are we just throwing money at tools?
+**Rohan:** Yeah definitely. If it saves me money and I'm not losing anything, why not? But I don't have time to research all this. I'm already working 10 hours a day.
 
-**Me:** Interesting. So it's more about having the data to defend your budget?
+**Me:** What if there was a free tool that analyzed this for you?
 
-**Sarah:** Exactly. If I walk into a meeting and say "we're optimized" or "here's where we can save $200/month," that's way better than "uh, I'll look into it."
+**Rohan:** That would be great! Just tell me what to do and I'll do it. I don't want to spend my weekend comparing features and pricing.
 
-**Me:** Quick question—do you know what Cursor costs per seat?
+**Me:** One more thing - does your company know you're also paying for ChatGPT separately?
 
-**Sarah:** Um... $40 a month? Or wait, is that per year? See, this is my problem. *laughs*
+**Rohan:** No, they don't know. I just use my own card. Maybe they're also paying for something I don't know about. *laughs* Nobody really talks about this stuff.
 
 ### Takeaway:
 
-Sarah doesn't track tool costs closely because she's busy managing people and projects. Her pain point isn't just savings—it's having defensible data for finance conversations. The audit should validate efficient spending, not just find waste.
+Rohan is paying out of pocket for tools because he's not sure what his company provides. There's no communication about what tools are available. The audit should be simple and fast - he doesn't want to spend time on this. Also, he's thinking in rupees and is a regular developer, not a manager, so he's more relatable.
 
 ---
 
-## Interview 2: Mike T. — Solo Founder, Pre-Seed
+## Interview 2: Sneha Reddy — Freelance Developer
 
-**Role:** Founder/CEO (technical)  
-**Company Stage:** Pre-seed (solo, building MVP)  
+**Role:** Freelance Full Stack Developer  
+**Experience:** 2 years, working on 2-3 projects  
 **Date:** May 8, 2026  
-**Duration:** 10 minutes (phone call)
+**Duration:** 12 minutes (Coffee shop meeting)
 
-**Me:** Hey Mike, you mentioned you're using a bunch of AI tools?
+**Me:** So Sneha, you're freelancing full-time now?
 
-**Mike:** Yeah, too many probably. I've got ChatGPT Plus, Claude Pro, and Cursor Pro. That's like $60 a month.
+**Sneha:** Yeah, for the last 6 months. I have 2 regular clients and sometimes take small projects.
 
-**Me:** That's not terrible. Do you use all of them?
+**Me:** What AI tools are you using?
 
-**Mike:** I mean... kind of? I know it's redundant. Like, I'll use ChatGPT for some stuff, Claude for other stuff, Cursor for coding. But honestly I don't know which one I should drop.
+**Sneha:** I have ChatGPT Plus and GitHub Copilot. That's it. I tried Cursor but it was too expensive for me.
 
-**Me:** Why not just use the free tiers?
+**Me:** How much are you spending?
 
-**Mike:** Tried that. Hit the limits constantly. It was driving me crazy. So I just started paying for everything and now I feel guilty about it.
+**Sneha:** ChatGPT is $20, Copilot is $10. So $30 total, around 2500 rupees per month.
 
-**Me:** Guilty how?
+**Me:** Is that a lot for you?
 
-**Mike:** Like I'm wasting money. I'm bootstrapping this thing, every dollar matters. But I also don't have time to sit down and figure out the optimal setup.
+**Sneha:** Kind of, yeah. I mean, I'm earning okay but 2500 rupees every month adds up. That's like 30,000 per year just for these tools. But I feel like I need them to work fast.
 
-**Me:** What would make you feel better about it?
+**Me:** Do you use both equally?
 
-**Mike:** If someone just told me what to do. Like, "drop ChatGPT, use Claude for writing and Cursor for coding." I'd do it today. I just need someone to tell me what's optimal so I can stop thinking about it.
+**Sneha:** Honestly, I use ChatGPT way more. Copilot is nice but sometimes it suggests wrong code. ChatGPT I use for everything - coding help, client emails, even invoice templates.
 
-**Me:** Would you pay for that advice?
+**Me:** Have you thought about canceling Copilot?
 
-**Mike:** Honestly? Yeah. Like $10 or $20 for someone to just audit my setup and give me a simple rule. I don't want to think about it anymore.
+**Sneha:** Yeah, I've thought about it. But then I'm like, what if I need it for a big project? So I just keep paying. It's stupid, I know.
 
-### Takeaway:
+**Me:** It's not stupid. What would help you make that decision?
 
-Mike has decision fatigue. He doesn't want options or analysis—he wants clear instructions. The audit needs to be prescriptive: "Do this, drop that, save $X." Also interesting: he'd pay for ongoing advice, which could be a future upsell.
+**Sneha:** If someone just told me - "for your type of work, you only need ChatGPT" or "you need both" - then I would know. Right now I'm just guessing and wasting money maybe.
 
----
+**Me:** Would you use a free tool that tells you this?
 
-## Interview 3: Jessica L. — VP Engineering, Series B
+**Sneha:** 100%! Please make it yaar. I've been wanting to optimize this for months but I don't know how. And I can't afford to pay someone to tell me.
 
-**Role:** VP Engineering  
-**Company Stage:** Series B (80 employees, 30 engineers)  
-**Date:** May 9, 2026  
-**Duration:** 15 minutes (in-person coffee)
+**Me:** What if the tool also showed you cheaper alternatives?
 
-**Me:** So you're managing 30 engineers now?
-
-**Jessica:** Yeah, we've grown fast. Went from 15 to 30 in the last 6 months.
-
-**Me:** What's your AI tool spend looking like?
-
-**Jessica:** Probably around $15K a month? We've got Cursor, GitHub Copilot Enterprise, ChatGPT Team for some folks, plus a bunch of API usage for our product.
-
-**Me:** That's a lot. Do you feel like you're overspending?
-
-**Jessica:** Honestly? I have no idea. Is $15K high or low for 30 engineers? I don't know.
-
-**Me:** What does your board think?
-
-**Jessica:** *laughs* They asked me in the last meeting: "What's your AI spend per developer?" I did the math real quick—$500 a month. They were like, "Is that good?" And I'm sitting there like... I don't know!
-
-**Me:** So you need a benchmark?
-
-**Jessica:** Exactly. If you could tell me "companies your size spend $X per dev," that would be incredibly valuable. Even more than telling me how to save money.
-
-**Me:** You don't care about savings?
-
-**Jessica:** I mean, sure, but $500 a month either way is a rounding error at our scale. What I care about is: am I being smart? Am I in the right ballpark? That's what I need to tell the board.
-
-**Me:** Makes sense. Anything else you'd want to know?
-
-**Jessica:** Yeah, actually—are we using what we're paying for? Like, if we're paying for 30 Cursor seats but only 18 people are actually using it, that's a problem. Not because of the money, but because it means we're not rolling out tools effectively.
+**Sneha:** Even better! Like, if there's a cheaper tool that does the same thing, I want to know. Every rupee matters when you're freelancing.
 
 ### Takeaway:
 
-Jessica's at a different scale. She doesn't care about saving a few hundred bucks—she cares about benchmarking and utilization. The audit should show: "Your spend per dev is $X, companies your size average $Y." Also flag underutilization for larger teams.
+Sneha is cost-conscious because she's paying from her own pocket. She wants clear, simple advice - not complex analysis. She's been thinking about optimizing for months but hasn't done it because it feels overwhelming. The audit needs to be free, fast, and give direct recommendations. Also, she's very relatable - a freelancer trying to save money.
 
 ---
 
 ## What I Learned
 
-### Patterns Across All Three:
-1. **Nobody knows their exact spend** — Even technical leaders don't track pricing closely
-2. **Justification matters as much as savings** — They need data to defend budgets to finance/board
-3. **Decision fatigue is real** — People want clear instructions, not options to evaluate
+### Common Patterns:
+1. **Nobody tracks their exact spend** — People just keep paying without reviewing
+2. **Decision fatigue is real** — They want clear instructions, not options to evaluate
+3. **Cost adds up fast** — Small monthly amounts become significant yearly expenses
+4. **Fear of canceling** — "What if I need it later?" keeps people subscribed to unused tools
 
-### Different Needs by Team Size:
-- **Small teams (1-10 devs):** Absolute savings matter ($50-200/month is meaningful)
-- **Medium teams (10-30 devs):** Need justification and visibility for finance conversations
-- **Large teams (30+ devs):** Care about benchmarking and utilization, not just cost
+### Key Insights:
+- **Individual developers** care about absolute savings (1500-2500 rupees/month matters)
+- **Company employees** don't know what tools company provides vs what they pay for themselves
+- **Freelancers** are most cost-conscious and want cheaper alternatives
+- People want someone to just tell them what to do, not make them research
 
 ### Changes to the Product:
-1. Add "Your spend is well-optimized" message for efficient users (validation has value)
-2. Make recommendations prescriptive: "Do this" not "Consider this"
-3. Add benchmarking for larger teams (future feature)
-4. Flag underutilization: unused seats, low activity (different kind of waste)
+1. Make recommendations very direct: "Cancel this" or "Keep this" - no ambiguity
+2. Show yearly cost impact (monthly feels small, yearly feels significant)
+3. Add "well-optimized" validation message for efficient users
+4. Suggest cheaper alternatives when available
+5. Flag communication gaps (company paying for tools employees don't know about)
