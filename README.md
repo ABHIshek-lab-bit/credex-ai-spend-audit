@@ -4,7 +4,16 @@ Free tool that audits your AI tool spending and finds hidden savings. Built for 
 
 ## Screenshots
 
-[Will add after deployment - need live URL first]
+**Live Demo:** https://credex-ai-spend-audit-azure.vercel.app
+
+The application features:
+- Modern dark theme with glassmorphism effects and 3D animations
+- Clean, intuitive form for adding AI tools (Cursor, Claude, ChatGPT, etc.)
+- Instant audit results with per-tool breakdown and savings calculations
+- Shareable audit URLs with Open Graph previews
+- Responsive design that works on mobile and desktop
+
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/e1d458d4-b119-4d86-9d33-9fdba72ce5d0" />
 
 ## Quick Start
 
