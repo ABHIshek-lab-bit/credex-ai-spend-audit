@@ -14,6 +14,8 @@ The application features:
 - Responsive design that works on mobile and desktop
 
 <img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/e1d458d4-b119-4d86-9d33-9fdba72ce5d0" />
+<img width="1917" height="972" alt="image" src="https://github.com/user-attachments/assets/b27a5f77-a532-44ee-a3a0-9455e8efae41" />
+<img width="1917" height="971" alt="image" src="https://github.com/user-attachments/assets/a29bede2-77c7-4929-a88f-da5c21d48b6d" />
 
 ## Quick Start
 
